@@ -38,6 +38,16 @@ export class CreateContactsTable1749806333989 implements MigrationInterface {
             type: 'varchar(90)',
             isNullable: true,
           }),
+          new TableColumn({
+            name: 'created_at',
+            type: 'timestamptz',
+            default: 'now()',
+          }),
+          new TableColumn({
+            name: 'updated_at',
+            type: 'timestamptz',
+            default: 'now()',
+          }),
         ],
       }),
     );
