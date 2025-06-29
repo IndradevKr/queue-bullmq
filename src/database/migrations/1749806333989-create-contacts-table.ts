@@ -62,7 +62,3 @@ export class CreateContactsTable1749806333989 implements MigrationInterface {
     await queryRunner.dropTable('contacts');
   }
 }
-// To run migration for now:
-//
-//  pnpm exec ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run -d ./src/config/typeorm.config.ts
-//
