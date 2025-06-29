@@ -7,7 +7,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "sourceMap": true,
     "outDir": "./dist",
@@ -21,6 +21,9 @@
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
     "strictPropertyInitialization": false,
+    "allowImportingTsExtensions": true,
+    "lib": ["esnext"],
+    "types": ["node"],
     "paths": {
       "@/*": ["./src/*"]
     }
