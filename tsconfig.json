@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "NodeNext",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
     "sourceMap": true,
     "outDir": "./dist",
@@ -20,12 +20,10 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "strictPropertyInitialization": false,
+    "noEmit": true,
     "allowImportingTsExtensions": true,
-    "lib": ["esnext"],
-    "types": ["node"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src/**/*"],
