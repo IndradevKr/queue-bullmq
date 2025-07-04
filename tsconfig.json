@@ -1,31 +1,25 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ESNext",
-    "moduleResolution": "nodenext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2017",
     "esModuleInterop": true,
-    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": false,
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": "./",
+    "sourceMap": true,
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false,
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "paths": {
       "@/*": ["src/*"]
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
 }
