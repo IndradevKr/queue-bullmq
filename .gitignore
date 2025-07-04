@@ -58,3 +58,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # TypeScript build info
 tsconfig.build.tsbuildinfo
 *.tsbuildinfo
+
+# db data files
+db_data
